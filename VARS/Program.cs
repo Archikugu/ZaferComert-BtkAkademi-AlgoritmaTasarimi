@@ -6,7 +6,11 @@ namespace VARS
     {
         static void Main(string[] args)
         {
-            Vars01.Anakod();
+            // Vars01.Anakod();
+
+            VARS02.BoxUnbox();
+
+
         }
     }
 }
