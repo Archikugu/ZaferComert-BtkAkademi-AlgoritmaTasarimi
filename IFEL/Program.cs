@@ -7,6 +7,8 @@ namespace IFEL
         static void Main(string[] args)
         {
             // IFEL01.IFELSE01();
+
+            IFEL02.IFELSE02();
         }
     }
 }

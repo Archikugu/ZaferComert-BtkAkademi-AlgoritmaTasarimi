@@ -8,7 +8,7 @@ namespace IFEL
 {
     public class IFEL01
     {
-        public static void Ifel01()
+        public static void IFELSE01()
         {
             Console.WriteLine("Bir Karakter Giriniz: ");
             char ch = (char)Console.Read();
