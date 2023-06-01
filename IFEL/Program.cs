@@ -11,7 +11,9 @@ namespace IFEL
 
             // IFEL02.IFELSE02();
 
-            SWTC01.SwitchCase01();
+            // SWTC01.SwitchCase01();
+
+            SWTC02.SwitchCase02();
 
         }
     }
