@@ -6,6 +6,13 @@ namespace TMD1
     {
         static void Main(string[] args)
         {
+            //TekMiCiftMi();
+            int n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("|{0}| = {1} ", n, Sayi.MutlakDeger(n));
+        }
+
+        private static void TekMiCiftMi()
+        {
             int n = Convert.ToInt32(Console.ReadLine());
             if (Sayi.TekMi(n))
             {
