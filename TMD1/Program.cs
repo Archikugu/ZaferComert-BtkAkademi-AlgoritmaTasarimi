@@ -10,8 +10,24 @@ namespace TMD1
 
             // MutlakDeger();
 
-            //AsalMi();
+            // AsalMi();
 
+            // RakamlarToplami();
+
+            // NeKadarOlanSayılarınToplami();
+
+            int n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Birden {0}'e kadar olan sayilarin toplami = {1,5}", n, Sayi.NeKadarOlanSayilarinFormulToplami(n));
+        }
+
+        private static void NeKadarOlanSayılarınToplami()
+        {
+            int n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Birden {0}'e kadar olan sayilarin toplami = {1,5}", n, Sayi.NeKadarOlanSayilarinToplami(n));
+        }
+
+        private static void RakamlarToplami()
+        {
             int n = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("{0} sayinin rakamlari toplami {1}", n, Sayi.RakamlarToplamı(n));
         }

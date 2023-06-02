@@ -80,6 +80,7 @@ namespace TMD1
             return kontrol;
 
         }
+
         /// <summary>
         /// Parametre olarak aldigi sayinin rakamlari toplamı doner
         /// </summary>
@@ -96,6 +97,20 @@ namespace TMD1
             }
             return toplam;
 
+        }
+
+        public static int NeKadarOlanSayilarinToplami(int n)
+        {
+            int t = 0;
+            for (int i = 1; i <= n; i++)
+            {
+                t += i;
+            }
+            return t;
+        }
+        public static int NeKadarOlanSayilarinFormulToplami(int n)
+        {
+            return n * (n + 1) / 2;
         }
 
     }
