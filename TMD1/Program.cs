@@ -7,6 +7,14 @@ namespace TMD1
         static void Main(string[] args)
         {
             //TekMiCiftMi();
+
+            // MutlakDeger();
+            int n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("{0}", Sayi.AsalMi(n) ? "Asal sayi." : "Asal sayi değil!");
+        }
+
+        private static void MutlakDeger()
+        {
             int n = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("|{0}| = {1} ", n, Sayi.MutlakDeger(n));
         }
