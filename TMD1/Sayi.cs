@@ -56,6 +56,11 @@ namespace TMD1
             }
         }
 
+        /// <summary>
+        /// Parametre olarak aldigi sayinin asal yada asal olmadığı degerini doner
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns>Girilen sayinin  degeri dönüş ifadesi olacak</returns>
         public static bool AsalMi(int n)
         {
             if (n <= 1)
@@ -73,6 +78,23 @@ namespace TMD1
                 }
             }
             return kontrol;
+
+        }
+        /// <summary>
+        /// Parametre olarak aldigi sayinin rakamlari toplamı doner
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns>Rakamları toplamıdır</returns>
+        public static int RakamlarToplamı(int n)
+        {
+            int toplam = 0, rakam = 0;
+            while (n > 0)
+            {
+                rakam = n % 10;
+                toplam += rakam;
+                n = n / 10;
+            }
+            return toplam;
 
         }
 

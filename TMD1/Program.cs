@@ -9,6 +9,15 @@ namespace TMD1
             //TekMiCiftMi();
 
             // MutlakDeger();
+
+            //AsalMi();
+
+            int n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("{0} sayinin rakamlari toplami {1}", n, Sayi.RakamlarToplamı(n));
+        }
+
+        private static void AsalMi()
+        {
             int n = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("{0}", Sayi.AsalMi(n) ? "Asal sayi." : "Asal sayi değil!");
         }
