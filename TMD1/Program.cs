@@ -15,10 +15,6 @@ namespace TMD1
             {
                 Console.WriteLine("Girilen sayi = {0} çift bir sayıdır!", n);
             }
-            else
-            {
-                Console.WriteLine("Yanlış sayı girdiniz girilen sayı = {0}", n);
-            }
         }
     }
 }
