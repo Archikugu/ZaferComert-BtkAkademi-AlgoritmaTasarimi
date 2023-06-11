@@ -16,6 +16,16 @@ namespace TMD1
 
             // NeKadarOlanSayılarınToplami();
 
+            // NeKadarOlanSayilarınFormulIleToplami();
+
+            int n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("{0}", Sayi.NeKadarOlanTekSayilarinToplami(n));
+            Console.WriteLine("{0}", Sayi.NeKadarOlanTekSayilarinToplamiAlternatifCozum(n));
+            Console.WriteLine("{0}", Sayi.NeKadarOlanTekSayilarinFormulleToplami(n));
+        }
+
+        private static void NeKadarOlanSayilarınFormulIleToplami()
+        {
             int n = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Birden {0}'e kadar olan sayilarin toplami = {1,5}", n, Sayi.NeKadarOlanSayilarinFormulToplami(n));
         }

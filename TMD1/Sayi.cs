@@ -98,7 +98,6 @@ namespace TMD1
             return toplam;
 
         }
-
         public static int NeKadarOlanSayilarinToplami(int n)
         {
             int t = 0;
@@ -112,6 +111,37 @@ namespace TMD1
         {
             return n * (n + 1) / 2;
         }
+
+        public static int NeKadarOlanTekSayilarinToplami(int n)
+        {
+            int t = 0;
+            for (int i = 1; i <= n; i++)
+            {
+                if (i % 2 == 1)
+                {
+                    t += i;
+                }
+            }
+            return t;
+        }
+
+        public static int NeKadarOlanTekSayilarinToplamiAlternatifCozum(int n)
+        {
+            int t = 0;
+            for (int i = 1; i <= n; i += 2)
+            {
+                t += i;
+            }
+            return t;
+        }
+
+        public static int NeKadarOlanTekSayilarinFormulleToplami(int n)
+        {
+            n = n + 1;
+            n = n / 2;
+            return n * n;
+        }
+
 
     }
 }
