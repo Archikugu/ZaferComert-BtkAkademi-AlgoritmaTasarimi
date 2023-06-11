@@ -22,11 +22,18 @@ namespace TMD1
 
             // NeKadarOlanCiftSayılarinToplami();
 
+            // AralıklıCiftSayilarinToplami();
 
+            double r = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("2 * {0:F2} * {1:F2} = {2:F2}", Cember.pi, r, Cember.Cevresi(r));
+
+        }
+
+        private static void AralıklıCiftSayilarinToplami()
+        {
             int t1 = Sayi.NeKadarOlanCiftSayilarinFormulleToplami(80);
             int t2 = Sayi.NeKadarOlanCiftSayilarinFormulleToplami(48);
             Console.WriteLine("{0,5} - {1,5} = {2,5}", t1, t2, t1 - t2);
-
         }
 
         private static void NeKadarOlanCiftSayılarinToplami()
