@@ -18,6 +18,16 @@ namespace TMD1
 
             // NeKadarOlanSayilarınFormulIleToplami();
 
+            // NeKadarOlanTekSayılarinToplami();
+
+            int n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("{0}", Sayi.NeKadarOlanCiftSayilarinToplami(n));
+            Console.WriteLine("{0}", Sayi.NeKadarOlanCiftSayilarinToplamiAlternatifCozum(n));
+            Console.WriteLine("{0}", Sayi.NeKadarOlanCiftSayilarinFormulleToplami(n));
+        }
+
+        private static void NeKadarOlanTekSayılarinToplami()
+        {
             int n = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("{0}", Sayi.NeKadarOlanTekSayilarinToplami(n));
             Console.WriteLine("{0}", Sayi.NeKadarOlanTekSayilarinToplamiAlternatifCozum(n));

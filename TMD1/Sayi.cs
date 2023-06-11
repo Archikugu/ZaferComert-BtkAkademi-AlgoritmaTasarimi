@@ -124,7 +124,6 @@ namespace TMD1
             }
             return t;
         }
-
         public static int NeKadarOlanTekSayilarinToplamiAlternatifCozum(int n)
         {
             int t = 0;
@@ -134,7 +133,6 @@ namespace TMD1
             }
             return t;
         }
-
         public static int NeKadarOlanTekSayilarinFormulleToplami(int n)
         {
             n = n + 1;
@@ -142,6 +140,33 @@ namespace TMD1
             return n * n;
         }
 
+        public static int NeKadarOlanCiftSayilarinToplami(int n)
+        {
+            int t = 0;
+            for (int i = 2; i <= n; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    t += i;
+                }
+            }
+            return t;
+        }
 
+        public static int NeKadarOlanCiftSayilarinToplamiAlternatifCozum(int n)
+        {
+            int t = 0;
+            for (int i = 2; i <= n; i += 2)
+            {
+                t += i;
+            }
+            return t;
+        }
+
+        public static int NeKadarOlanCiftSayilarinFormulleToplami(int n)
+        {
+            n = n / 2;
+            return n * (n + 1);
+        }
     }
 }
