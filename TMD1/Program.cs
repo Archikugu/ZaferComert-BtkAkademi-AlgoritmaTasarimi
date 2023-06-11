@@ -24,9 +24,17 @@ namespace TMD1
 
             // AralıklıCiftSayilarinToplami();
 
+            // CemberCevresi();
+
+            double r = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Alan = {0:F2}", Daire.AlaniHesapla(r));
+
+        }
+
+        private static void CemberCevresi()
+        {
             double r = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("2 * {0:F2} * {1:F2} = {2:F2}", Cember.pi, r, Cember.Cevresi(r));
-
         }
 
         private static void AralıklıCiftSayilarinToplami()
