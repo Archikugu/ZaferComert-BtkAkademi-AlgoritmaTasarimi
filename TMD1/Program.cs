@@ -20,6 +20,17 @@ namespace TMD1
 
             // NeKadarOlanTekSayılarinToplami();
 
+            // NeKadarOlanCiftSayılarinToplami();
+
+
+            int t1 = Sayi.NeKadarOlanCiftSayilarinFormulleToplami(80);
+            int t2 = Sayi.NeKadarOlanCiftSayilarinFormulleToplami(48);
+            Console.WriteLine("{0,5} - {1,5} = {2,5}", t1, t2, t1 - t2);
+
+        }
+
+        private static void NeKadarOlanCiftSayılarinToplami()
+        {
             int n = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("{0}", Sayi.NeKadarOlanCiftSayilarinToplami(n));
             Console.WriteLine("{0}", Sayi.NeKadarOlanCiftSayilarinToplamiAlternatifCozum(n));
