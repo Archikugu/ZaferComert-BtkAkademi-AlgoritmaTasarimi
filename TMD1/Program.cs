@@ -26,9 +26,20 @@ namespace TMD1
 
             // CemberCevresi();
 
+            // DaireninAlanı();
+
+            Console.WriteLine("Dairenin yarı çapını Giriniz :");
+            double r = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Dairenin açısını giriniz :");
+            double aci = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Alan = {0:F2}", Daire.AlaniHesapla(r, aci));
+
+        }
+
+        private static void DaireninAlanı()
+        {
             double r = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Alan = {0:F2}", Daire.AlaniHesapla(r));
-
         }
 
         private static void CemberCevresi()

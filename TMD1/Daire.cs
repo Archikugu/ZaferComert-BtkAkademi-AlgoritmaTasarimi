@@ -18,5 +18,15 @@ namespace TMD1
         {
             return pi * r * r;
         }
+        /// <summary>
+        /// Dairenin alanini hesaplama  
+        /// </summary>
+        /// <param name="r">YariCap</param>
+        /// <param name="aci">Gördüğü açı</param>
+        /// <returns>Alan Degeri</returns>
+        public static double AlaniHesapla(double r, double aci)
+        {
+            return pi * r * r * aci / 360;
+        }
     }
 }
