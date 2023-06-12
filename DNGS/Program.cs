@@ -6,7 +6,9 @@ namespace DNGS
     {
         static void Main(string[] args)
         {
-            DNGS01.BirdenYuzeKadarSayilarinToplami();
+            // DNGS01.BirdenYuzeKadarSayilarinToplami();
+
+            DNGS02.KullanıcıdanAlınanSayınınTekVeCiftToplami();
         }
     }
 }
