@@ -10,7 +10,9 @@ namespace DNGS
 
             // DNGS02.KullanıcıdanAlınanSayınınTekVeCiftToplami();
 
-            DNGS03.BindenSıfıraKadarBesinKatlarıVeKacAdetElemanOldugunuGoster();
+            // DNGS03.BindenSıfıraKadarBesinKatlarıVeKacAdetElemanOldugunuGoster();
+
+            DNGS04.CarpimTablosu();
         }
     }
 }
