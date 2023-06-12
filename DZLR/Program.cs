@@ -6,7 +6,11 @@ namespace DZLR
     {
         static void Main(string[] args)
         {
-            DZLR01.EnBuyukVeEnKucuk();
+            DZLR01.Olustur();
+
+            //Console.WriteLine("n değerini giriniz: \n");
+            //int limit = Convert.ToInt32(Console.ReadLine());
+
         }
 
 

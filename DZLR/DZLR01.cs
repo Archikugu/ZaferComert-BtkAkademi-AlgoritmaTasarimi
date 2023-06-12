@@ -8,7 +8,7 @@ namespace DZLR
 {
     public class DZLR01
     {
-        public static void EnBuyukVeEnKucuk()
+        public static void Olustur()
         {
             Console.WriteLine("n değerini giriniz: \n");
             int limit = Convert.ToInt32(Console.ReadLine());
