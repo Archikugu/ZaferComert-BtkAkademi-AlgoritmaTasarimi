@@ -8,7 +8,9 @@ namespace DNGS
         {
             // DNGS01.BirdenYuzeKadarSayilarinToplami();
 
-            DNGS02.KullanıcıdanAlınanSayınınTekVeCiftToplami();
+            // DNGS02.KullanıcıdanAlınanSayınınTekVeCiftToplami();
+
+            DNGS03.BindenSıfıraKadarBesinKatlarıVeKacAdetElemanOldugunuGoster();
         }
     }
 }
