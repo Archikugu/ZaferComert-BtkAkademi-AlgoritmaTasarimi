@@ -17,6 +17,15 @@ namespace DZLR
 
             Console.WriteLine("Dizinin standart sapmasi : {0:F2}", Dizi.StandartSapma(X));
 
+            Dizi dizi = new Dizi();
+
+            int[] tekSayilarDizisi = dizi.TekDiziOlustur(X);
+            Dizi.Yazdir(tekSayilarDizisi);
+            Console.WriteLine("Tek Sayıların Sayisi:{0,5}", dizi.TekSayilarinSayisi(X));
+
+            int[] ciftSayilarDizisi = dizi.CiftDiziOlustur(X);
+            Dizi.Yazdir(ciftSayilarDizisi);
+            Console.WriteLine("Çift Sayıların Sayisi:{0,5}", dizi.CiftSayilarinSayisi(X));
         }
 
 

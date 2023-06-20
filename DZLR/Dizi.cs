@@ -103,5 +103,91 @@ namespace DZLR
             return std;
 
         }
+
+        /// <summary>
+        /// Dizideki tek sayıların sayısını döner
+        /// </summary>
+        /// <param name="X">X</param>
+        /// <returns>Sonuc : tek sayıların sayısını</returns>
+        public int TekSayilarinSayisi(int[] X)
+        {
+            int tekSayilarinSayisi = 0;
+            for (int i = 0; i < X.Length; i++)
+            {
+                if (X[i] % 2 == 1)
+                {
+                    tekSayilarinSayisi++;
+                }
+            }
+            return tekSayilarinSayisi;
+        }
+
+        /// <summary>
+        /// Dizideki çift sayıların sayısını döner
+        /// </summary>
+        /// <param name="X">X</param>
+        /// <returns>Sonuc : çift sayıların sayısını</returns>
+        public int CiftSayilarinSayisi(int[] X)
+        {
+            int ciftSayilarinSayisi = 0;
+            for (int i = 0; i < X.Length; i++)
+            {
+                if (X[i] % 2 == 0)
+                {
+                    ciftSayilarinSayisi++;
+                }
+            }
+            return ciftSayilarinSayisi;
+        }
+        /// <summary>
+        /// Bir dizideki tek sayilardan yeni bir dizi olusturur.
+        /// </summary>
+        /// <param name="X">Dizi</param>
+        /// <returns>Tek sayılardan olusan diziyi temsil eder</returns>
+        public int[] TekDiziOlustur(int[] X)
+        {
+            int[] tekDizi = new int[TekSayilarinSayisi(X)];
+            int y = 0;
+            for (int i = 0; i < X.Length; i++)
+            {
+                if (X[i] % 2 == 1)
+                {
+                    tekDizi[y] = X[i];
+                    y++;
+                }
+            }
+            return tekDizi;
+
+        }
+        /// <summary>
+        /// Bir dizideki çift sayilardan yeni bir dizi olusturur.
+        /// </summary>
+        /// <param name="X">Dizi</param>
+        /// <returns>çift sayılardan olusan diziyi temsil eder</returns>
+        public int[] CiftDiziOlustur(int[] X)
+        {
+            int[] ciftDizi = new int[CiftSayilarinSayisi(X)];
+            int y = 0;
+            for (int i = 0; i < X.Length; i++)
+            {
+                if (X[i] % 2 == 0)
+                {
+                    ciftDizi[y] = X[i];
+                    y++;
+                }
+            }
+            return ciftDizi;
+
+        }
+
+        public static void Yazdir(int[] X)
+        {
+            Console.WriteLine("");
+            for (int i = 0; i < X.Length; i++)
+            {
+                Console.Write("{0,3}", X[i]);
+            }
+            Console.WriteLine("");
+        }
     }
 }
