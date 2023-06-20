@@ -15,6 +15,8 @@ namespace DZLR
 
             Console.WriteLine("Dizinin aritmetik ortalamasi : {0:F2}", Dizi.AritmetikOrtalama(X));
 
+            Console.WriteLine("Dizinin standart sapmasi : {0:F2}", Dizi.StandartSapma(X));
+
         }
 
 

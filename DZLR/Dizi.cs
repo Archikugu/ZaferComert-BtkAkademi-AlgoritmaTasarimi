@@ -18,7 +18,7 @@ namespace DZLR
             Console.WriteLine("");
             for (int i = 0; i < limit; i++)
             {
-                sayilar[i] = new Random().Next(1, 100);
+                sayilar[i] = new Random().Next(0, 100);
                 Console.Write("{0,5} ", sayilar[i]);
             }
             Console.WriteLine("\n");
@@ -77,7 +77,31 @@ namespace DZLR
             {
                 toplam += X[i];
             }
+            if (toplam / X.Length == 0)
+            {
+                Console.WriteLine("Sonuç sonsuzdur 0 a bölüm vardır");
+            }
             return toplam / X.Length;
+        }
+        /// <summary>
+        /// Parametre olarak aldigi dizinin standart sapmasını hesaplar 
+        /// </summary>
+        /// <param name="X">Dizi</param>
+        /// <returns>Standart Sapma</returns>
+        public static double StandartSapma(int[] X)
+        {
+            double aritmetikOrtalma = AritmetikOrtalama(X);
+            double t = 0, f = 0;
+            double std = 0;
+            for (int i = 0; i < X.Length; i++)
+            {
+                f = X[i] - aritmetikOrtalma;
+                t += Math.Pow(f, 2);
+            }
+            std = t / (X.Length - 1);
+            std = Math.Sqrt(std);
+            return std;
+
         }
     }
 }
